@@ -9,38 +9,64 @@ body {
     min-height: 100vh;
     background-color: #10130d;
     color: #d8d1af;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+h1,
+h2,
+h3,
+.title {
+    font-family: "Cinzel", Georgia, serif;
 }
 
 /* Top title area */
 .site-header {
-    padding: 64px 24px 40px;
+    padding: 64px 24px 42px;
     text-align: center;
     background-color: #1a2114;
     border-bottom: 3px solid #71633c;
 }
 
 .eyebrow {
-    margin: 0 0 12px;
-    color: #9ca66f;
-    font-family: Consolas, monospace;
-    letter-spacing: 3px;
+    margin: 0 0 16px;
+    color: #98a568;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 h1 {
     margin: 0;
-    color: #b4bd71;
-    font-size: clamp(42px, 8vw, 84px);
+    color: #b5bd72;
+    font-size: clamp(42px, 8vw, 82px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow:
+        0 2px 0 #292d1d,
+        0 0 12px rgba(147, 166, 79, 0.35),
+        0 0 28px rgba(95, 119, 48, 0.18);
+}
+
+.title {
+    margin: 18px 0 0;
+    color: #a8955f;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .tagline {
-    margin-top: 14px;
-    color: #8f956b;
-    font-size: 18px;
+    margin: 10px 0 0;
+    color: #928d69;
+    font-size: 20px;
     font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 /* Dashboard layout */
@@ -63,14 +89,17 @@ h1 {
 }
 
 .panel h2 {
-    margin-top: 0;
-    color: #aeb76f;
+    margin: 0 0 16px;
+    color: #b0b971;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .panel p,
 .panel li {
+    font-size: 18px;
     line-height: 1.6;
 }
 
