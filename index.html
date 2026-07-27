@@ -3,52 +3,322 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Nurgle's Garden is a grimdark career, education, and personal progress dashboard."
+    >
+
     <title>Nurgle's Garden | The Long Vigil</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
-    rel="stylesheet"
->
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-<link rel="stylesheet" href="css/garden.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
 
+    <link rel="stylesheet" href="css/garden.css">
 </head>
 
 <body>
 
-    <header class="site-header">
-        <p class="eyebrow">The Long Vigil // Garden Protocol</p>
-        <h1>Nurgle's Garden</h1>
-        <p class="tagline">From decay comes growth.</p>
-    </header>
+    <div class="fortress">
 
-    <main class="dashboard">
+        <aside class="sidebar">
 
-        <section class="panel">
-            <h2>Current Campaign</h2>
-            <p>Begin the journey toward WGU and a cybersecurity career.</p>
-        </section>
+            <div class="sidebar-brand">
+                <p class="sidebar-symbol" aria-hidden="true">☣</p>
 
-        <section class="panel">
-            <h2>Garden Growth</h2>
-            <p>Initiation progress: 10%</p>
-        </section>
+                <p class="sidebar-title">
+                    Nurgle's Garden
+                </p>
 
-        <section class="panel">
-            <h2>Active Rituals</h2>
+                <p class="sidebar-subtitle">
+                    The Long Vigil
+                </p>
+            </div>
 
-            <ul>
-                <li>Build Nurgle's Garden</li>
-                <li>Search for scholarships</li>
-                <li>Prepare for WGU</li>
-            </ul>
-        </section>
+            <nav class="fortress-navigation" aria-label="Primary navigation">
 
-    </main>
+                <p class="navigation-label">
+                    Fortress Chambers
+                </p>
+
+                <ul class="navigation-list">
+
+                    <li>
+                        <a class="navigation-link active" href="#sanctuary">
+                            <span class="navigation-icon" aria-hidden="true">◆</span>
+                            <span>Sanctuary</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation-link" href="#forge">
+                            <span class="navigation-icon" aria-hidden="true">⚒</span>
+                            <span>The Forge</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation-link" href="#archives">
+                            <span class="navigation-icon" aria-hidden="true">▣</span>
+                            <span>The Archives</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation-link" href="#greenhouse">
+                            <span class="navigation-icon" aria-hidden="true">♧</span>
+                            <span>The Greenhouse</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation-link" href="#reliquary">
+                            <span class="navigation-icon" aria-hidden="true">✦</span>
+                            <span>The Reliquary</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation-link" href="#apothecary">
+                            <span class="navigation-icon" aria-hidden="true">⚗</span>
+                            <span>The Apothecary</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="sidebar-status">
+                <span class="status-light" aria-hidden="true"></span>
+
+                <div>
+                    <p>Garden Status</p>
+                    <strong>Awakening</strong>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content" id="sanctuary">
+
+            <header class="site-header">
+
+                <p class="eyebrow">
+                    The Long Vigil // Sanctuary Protocol
+                </p>
+
+                <h1>Nurgle's Garden</h1>
+
+                <p class="title">
+                    Chronicle of the Cheeky Nurgling
+                </p>
+
+                <p class="tagline">
+                    From decay comes growth.
+                </p>
+
+            </header>
+
+            <section class="campaign-banner">
+
+                <div>
+                    <p class="section-kicker">
+                        Active Campaign
+                    </p>
+
+                    <h2>The Path to Cybersecurity</h2>
+
+                    <p>
+                        Build the knowledge, experience, and resources needed
+                        to begin a new career and provide a stronger future
+                        for your family.
+                    </p>
+                </div>
+
+                <div class="campaign-seal" aria-hidden="true">
+                    VII
+                </div>
+
+            </section>
+
+            <section
+                class="dashboard-grid"
+                aria-label="Sanctuary dashboard"
+            >
+
+                <article class="panel panel-wide">
+
+                    <div class="panel-heading">
+
+                        <div>
+                            <p class="section-kicker">
+                                Campaign Progress
+                            </p>
+
+                            <h2>Garden Growth</h2>
+                        </div>
+
+                        <span class="panel-value">
+                            10%
+                        </span>
+
+                    </div>
+
+                    <div
+                        class="progress-track"
+                        role="progressbar"
+                        aria-label="Garden growth"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="10"
+                    >
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <p class="panel-note">
+                        The first foundations have been laid. GitHub, Git,
+                        VS Code, HTML, and CSS are now active.
+                    </p>
+
+                </article>
+
+                <article class="panel">
+
+                    <p class="section-kicker">
+                        Present Objective
+                    </p>
+
+                    <h2>Current Campaign</h2>
+
+                    <p class="objective-title">
+                        Raise the Fortress
+                    </p>
+
+                    <p>
+                        Build the permanent navigation and command chamber
+                        for Nurgle's Garden.
+                    </p>
+
+                    <span class="status-badge">
+                        In Progress
+                    </span>
+
+                </article>
+
+                <article class="panel">
+
+                    <p class="section-kicker">
+                        Daily Duties
+                    </p>
+
+                    <h2>Active Rituals</h2>
+
+                    <ul class="ritual-list">
+
+                        <li>
+                            <span class="ritual-marker"></span>
+                            Build the fortress layout
+                        </li>
+
+                        <li>
+                            <span class="ritual-marker"></span>
+                            Search for scholarships
+                        </li>
+
+                        <li>
+                            <span class="ritual-marker"></span>
+                            Prepare for WGU
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <article class="panel">
+
+                    <p class="section-kicker">
+                        Current Rank
+                    </p>
+
+                    <h2>The Little Lord</h2>
+
+                    <p class="rank-name">
+                        Initiate of the Garden
+                    </p>
+
+                    <dl class="stat-list">
+
+                        <div>
+                            <dt>Commits</dt>
+                            <dd>3</dd>
+                        </div>
+
+                        <div>
+                            <dt>Projects</dt>
+                            <dd>1</dd>
+                        </div>
+
+                        <div>
+                            <dt>Certifications</dt>
+                            <dd>0</dd>
+                        </div>
+
+                    </dl>
+
+                </article>
+
+                <article class="panel">
+
+                    <p class="section-kicker">
+                        Next Milestone
+                    </p>
+
+                    <h2>The First Harvest</h2>
+
+                    <p>
+                        Complete the first functional version of the
+                        Sanctuary dashboard.
+                    </p>
+
+                    <p class="milestone-reward">
+                        Reward: Fortress Wing Unlocked
+                    </p>
+
+                </article>
+
+            </section>
+
+            <footer class="fortress-footer">
+
+                <p>
+                    Nurgle's Garden // Version 0.1.2
+                </p>
+
+                <p>
+                    The fortress remembers every step.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 
