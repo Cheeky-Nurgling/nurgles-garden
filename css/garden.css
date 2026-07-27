@@ -1,0 +1,86 @@
+/* Reset some browser defaults */
+* {
+    box-sizing: border-box;
+}
+
+/* Main page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #10130d;
+    color: #d8d1af;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Top title area */
+.site-header {
+    padding: 64px 24px 40px;
+    text-align: center;
+    background-color: #1a2114;
+    border-bottom: 3px solid #71633c;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #9ca66f;
+    font-family: Consolas, monospace;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    color: #b4bd71;
+    font-size: clamp(42px, 8vw, 84px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    margin-top: 14px;
+    color: #8f956b;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Dashboard layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+/* Dashboard cards */
+.panel {
+    min-height: 210px;
+    padding: 24px;
+    background-color: #1a2015;
+    border: 1px solid #645c37;
+    border-left: 5px solid #788547;
+    box-shadow: 0 0 20px rgba(128, 152, 65, 0.12);
+}
+
+.panel h2 {
+    margin-top: 0;
+    color: #aeb76f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.panel p,
+.panel li {
+    line-height: 1.6;
+}
+
+.panel ul {
+    padding-left: 20px;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
