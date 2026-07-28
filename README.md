@@ -42,7 +42,7 @@ The goal is not simply to build software, but to document the process of becomin
 
 # 🟢 Current Status
 
-**Version:** 0.1.3
+**Version:** 0.2.0
 
 **Development Status:** Active
 
@@ -116,7 +116,7 @@ Every major feature, lesson, and milestone is recorded so the project can be und
 
 | Document | Purpose |
 |----------|---------|
-| 📖 [`CODEX.md`](docs/CODEX.md) | Programming handbook explaining every concept used throughout the project. |
+| 📖 [`CODEX`](docs/CODEX/README.md) | Complete programming handbook built alongside the project. |
 | 🐛 [`BESTIARY.md`](docs/BESTIARY.md) | Bugs encountered, their solutions, and lessons learned. |
 | 📜 [`CHANGELOG.md`](docs/CHANGELOG.md) | Version history and release notes. |
 | 🗺 [`ROADMAP.md`](docs/ROADMAP.md) | Planned features and future milestones. |

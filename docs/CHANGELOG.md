@@ -4,7 +4,7 @@ All notable changes to **Nurgle's Garden** will be documented here.
 
 ---
 
-## Version 0.1.2 — Raise the Fortress
+## Version 0.2.0 -(In Development)— Raise the Fortress
 
 ### Added
 
@@ -17,6 +17,10 @@ All notable changes to **Nurgle's Garden** will be documented here.
 - Gothic typography
 - CSS design system
 - Accessibility improvements
+- Added JavaScript support
+- Created app.js
+- Connected JavaScript to index.html
+- Verified browser console output
 
 ### Changed
 
