@@ -1,4 +1,8 @@
-# Development Roadmap
+# 🗺 Roadmap
+
+> *"Every path begins before the destination can be seen."*
+
+---
 
 ## Phase I — Foundations ✅
 
@@ -15,10 +19,16 @@
 ## Phase II — The Fortress Breathes
 
 - JavaScript
+  - [x] Connect JavaScript
+  - [ ] Learn the DOM
+  - [ ] Navigation interaction
+  - [ ] Dynamic dashboard
+  - [ ] Local Storage
 - Interactive Navigation
 - Animations
 - Theme Settings
 - Garden Status System
+- local storage 
 
 ---
 

@@ -1,3 +1,9 @@
+# 🎨 Style Guide
+
+> *"A fortress is remembered not only by its strength, but by its character."*
+
+---
+
 # Nurgle's Garden Style Guide
 
 ## Colors

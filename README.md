@@ -206,7 +206,8 @@ The Garden will eventually become a complete personal operating system featuring
 | 0.1.0 | Initial Fortress |
 | 0.1.1 | Sanctuary Layout |
 | 0.1.2 | Documentation Foundation |
-| 0.1.3 | Repository Polish *(Current)* |
+| 0.1.3 | Repository Polish |
+| 0.2.0 | Javascript "corrent" |
 
 ---
 

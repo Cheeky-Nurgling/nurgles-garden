@@ -2,6 +2,8 @@
 
 > *"Knowledge, like the Garden, grows one lesson at a time."*
 
+---
+
 Welcome to the official programming handbook for **Nurgle's Garden**.
 
 The Codex Viridis documents every concept learned while building this project. Rather than collecting random notes, it is organized as a living textbook that grows alongside the Garden.

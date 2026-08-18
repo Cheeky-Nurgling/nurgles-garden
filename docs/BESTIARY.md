@@ -1,12 +1,16 @@
 # 🪲 Bestiary
 
+>*"Every bug defeated becomes another lesson remembered."*
+
+---
+
 The Bestiary records every bug encountered while building Nurgle's Garden.
 
 Every bug defeated makes the fortress stronger.
 
 ---
 
-# Bug 001
+# 🐛 Bug 001
 
 ## Name
 
@@ -39,26 +43,30 @@ Correct:
 
 ---
 
-## Bug 002
-
-## name
-The Missing Console
+# 🐛 Bug 002 — The Missing Console
 
 ## Problem
 
-Pressed F12 in VS Code instead of the browser.
+The JavaScript console message did not appear.
 
-## Cause
+## Investigation
 
-Developer Tools belong to the browser, not the editor.
+JavaScript was correctly linked.
+
+The browser loaded `app.js`.
+
+The issue was that Developer Tools were opened inside VS Code instead of the web browser.
 
 ## Solution
 
-Open the website first.
-Press F12 inside the browser window.
+Open the website in the browser.
+
+Press **F12** inside the browser.
+
+Select the **Console** tab.
 
 ## Lesson Learned
 
 VS Code is where code is written.
 
-The browser is where code is executed.
+The browser is where JavaScript runs.

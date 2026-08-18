@@ -1,4 +1,8 @@
-# Changelog
+# 📜 Changelog
+
+> *"The Garden remembers every season."*
+
+---
 
 All notable changes to **Nurgle's Garden** will be documented here.
 
@@ -32,3 +36,32 @@ All notable changes to **Nurgle's Garden** will be documented here.
 The Garden has its first permanent foundation.
 
 The Little Lord has begun raising the Fortress.
+
+---
+
+# 📜 Changelog
+
+All notable changes to Nurgle's Garden will be documented in this file.
+
+---
+
+## Version 0.2.0 (In Development)
+
+### Added
+
+- Created the `js/` directory.
+- Added `app.js`.
+- Linked JavaScript to `index.html`.
+- Verified JavaScript execution using the browser console.
+- Began the JavaScript chapter of the project.
+
+---
+
+## Version 0.1.3
+
+### Added
+
+- Reorganized project repository.
+- Improved README.
+- Created documentation structure.
+- Added assets directory.
