@@ -116,7 +116,7 @@ Every major feature, lesson, and milestone is recorded so the project can be und
 
 | Document | Purpose |
 |----------|---------|
-| 📖 [`CODEX`](docs/CODEX/README.md) | Complete programming handbook built alongside the project. |
+| 📖 [`CODEX VIRIDIS`](docs/CODEX_VIRIDIS/README.md) | Complete programming handbook built alongside the project.
 | 🐛 [`BESTIARY.md`](docs/BESTIARY.md) | Bugs encountered, their solutions, and lessons learned. |
 | 📜 [`CHANGELOG.md`](docs/CHANGELOG.md) | Version history and release notes. |
 | 🗺 [`ROADMAP.md`](docs/ROADMAP.md) | Planned features and future milestones. |
@@ -207,7 +207,7 @@ The Garden will eventually become a complete personal operating system featuring
 | 0.1.1 | Sanctuary Layout |
 | 0.1.2 | Documentation Foundation |
 | 0.1.3 | Repository Polish |
-| 0.2.0 | Javascript "corrent" |
+| 0.2.0 | The Garden Awakens |
 
 ---
 

@@ -70,3 +70,33 @@ Select the **Console** tab.
 VS Code is where code is written.
 
 The browser is where JavaScript runs.
+
+---
+
+### 🐛 Bug #003 — The Mysterious Git Editor
+
+Problem
+
+Git opened a strange text editor instead of asking for a commit message.
+
+Cause
+
+The commit was started without using the `-m` flag.
+
+Git launched Vim to allow the commit message to be written manually.
+
+Solution
+
+Either:
+
+git commit -m "Your message"
+
+or
+
+Learn the basic Vim commands.
+
+Lesson Learned
+
+Git isn't broken.
+
+It was waiting for a commit message.
