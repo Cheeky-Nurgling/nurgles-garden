@@ -44,7 +44,7 @@ September 27, 2026
 
 **Achievement**
 
-The fortress navigation now responds to the visitor. Clicking any of the six chambers moves the active state to the chamber that was chosen.
+The first interactive feature in the project. Clicking a chamber in the sidebar moves the active state to the chamber that was chosen.
 
 ```javascript
 const allLinks = document.querySelectorAll(".navigation-link");
@@ -68,8 +68,7 @@ for (const link of allLinks) {
 - Looping through a list with `for...of`
 - Listening for clicks with `addEventListener()`
 - Adding and removing CSS classes with `classList`
-- The "reset everything, then set one" pattern
 
 **Why It Matters**
 
-This is the first feature in Nurgle's Garden that reacts to a person instead of only running when the page loads. Every earlier lesson came together in one working piece of code, and the Fortress now answers when it is touched.
+This marks the moment Nurgle's Garden began responding to the person using it, instead of only displaying content.
