@@ -8,7 +8,18 @@ All notable changes to **Nurgle's Garden** will be documented here.
 
 ---
 
-## Version 0.2.0 -(In Development)— Raise the Fortress
+## Version 0.1.3
+
+### Added
+
+- Reorganized project repository
+- Improved README
+- Created documentation structure
+- Added assets directory
+
+---
+
+## Version 0.2.0 — Raise the Fortress
 
 ### Added
 
@@ -21,15 +32,16 @@ All notable changes to **Nurgle's Garden** will be documented here.
 - Gothic typography
 - CSS design system
 - Accessibility improvements
-- Added JavaScript support
-- Created app.js
-- Connected JavaScript to index.html
-- Verified browser console output
+- Created the `js/` directory and `app.js`
+- Linked JavaScript to `index.html`
+- Verified JavaScript execution using the browser console
 
 ### Changed
 
 - Renamed Project Phoenix to **The Long Vigil**
 - Reorganized the dashboard into fortress chambers
+- Fixed a version mismatch between `index.html` and `README.md`
+- Fixed a dead documentation link pointing to the wrong Codex folder
 
 ### Notes
 
@@ -39,29 +51,13 @@ The Little Lord has begun raising the Fortress.
 
 ---
 
-# 📜 Changelog
-
-All notable changes to Nurgle's Garden will be documented in this file.
-
----
-
-## Version 0.2.0 (In Development)
+## Version 0.3.0 — The Garden Learns to Listen
 
 ### Added
 
-- Created the `js/` directory.
-- Added `app.js`.
-- Linked JavaScript to `index.html`.
-- Verified JavaScript execution using the browser console.
-- Began the JavaScript chapter of the project.
+- Interactive fortress navigation — clicking a chamber moves the active state to it
+- Six chamber links now respond to clicks using `querySelectorAll`, `for...of`, `addEventListener`, and `classList`
 
----
+### Notes
 
-## Version 0.1.3
-
-### Added
-
-- Reorganized project repository.
-- Improved README.
-- Created documentation structure.
-- Added assets directory.
+The Fortress heard a visitor for the first time.

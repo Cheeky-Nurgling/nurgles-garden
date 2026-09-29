@@ -42,20 +42,19 @@ The goal is not simply to build software, but to document the process of becomin
 
 # 🟢 Current Status
 
-**Version:** 0.2.0
+**Version:** 0.3.0
 
 **Development Status:** Active
 
 **Current Sprint**
 
-> **Sprint 001 — The Fortress Breathes**
+> **Sprint 002 — The Garden Learns to Listen**
 
 Current focus:
 
-- Repository polish
-- JavaScript foundation
-- Interactive navigation
-- Documentation improvements
+- JavaScript fundamentals
+- Interactive fortress navigation (complete)
+- Documentation catch-up
 
 ---
 
@@ -78,7 +77,7 @@ Current focus:
 |------------|---------|
 | HTML5 | Page structure |
 | CSS3 | Styling and responsive layout |
-| JavaScript | Interactive functionality *(coming soon)* |
+| JavaScript | Interactive functionality |
 | Git | Version control |
 | GitHub | Source control and collaboration |
 | VS Code | Development environment |
@@ -133,8 +132,8 @@ Every major feature, lesson, and milestone is recorded so the project can be und
 
 - [x] HTML Fundamentals
 - [x] CSS Fundamentals
-- [ ] JavaScript
-- [ ] DOM Manipulation
+- [x] JavaScript
+- [x] DOM Manipulation
 - [ ] Local Storage
 - [ ] APIs
 
@@ -208,6 +207,7 @@ The Garden will eventually become a complete personal operating system featuring
 | 0.1.2 | Documentation Foundation |
 | 0.1.3 | Repository Polish |
 | 0.2.0 | The Garden Awakens |
+| 0.3.0 | The Garden Learns to Listen |
 
 ---
 

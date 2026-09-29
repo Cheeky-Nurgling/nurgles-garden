@@ -154,7 +154,7 @@ The Long Vigil was no longer a solitary one.
 
 ### Chronicle Entry
 
-**Version:** 0.2.0
+**Version:** 0.3.0
 
 **Event:** The Garden Learns to Listen
 
