@@ -67,6 +67,11 @@ Afterward, use the Codex as a reference whenever you need a refresher.
 - Chapter XII — Responsive Design
 - Chapter XIII — Debugging
 
+## Part IV — Bringing the Garden to Life
+
+- Chapter XIV — JavaScript Fundamentals
+- Chapter XV — The DOM and Events
+
 ## Appendix
 
 - Git Cheat Sheet

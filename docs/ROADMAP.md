@@ -20,7 +20,7 @@
 
 - JavaScript
   - [x] Connect JavaScript
-  - [ ] Learn the DOM
+  - [x] Learn the DOM
   - [ ] Navigation interaction
   - [ ] Dynamic dashboard
   - [ ] Local Storage

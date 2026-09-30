@@ -14,6 +14,30 @@ Designing software so it can be used by as many people as possible, including pe
 
 ---
 
+## addEventListener
+
+A method that attaches a listener to an element, so a function runs automatically when a specific event occurs.
+
+```javascript
+sanctuaryLink.addEventListener("click", function () {
+  console.log("You clicked the Sanctuary link!");
+});
+```
+
+---
+
+## Argument
+
+The actual value supplied to a function when it is called.
+
+```javascript
+announceChamber("The Forge");
+```
+
+`"The Forge"` is the argument.
+
+---
+
 ## Attribute
 
 Additional information placed inside an HTML opening tag.
@@ -25,6 +49,16 @@ Example:
 ```
 
 In this example, `href` and `class` are attributes.
+
+---
+
+## Boolean
+
+A data type that can only ever be `true` or `false`.
+
+```javascript
+const isSanctuaryActive = true;
+```
 
 ---
 
@@ -60,6 +94,27 @@ A class is selected in CSS with a period:
 
 ---
 
+## classList
+
+A property that provides access to an element's CSS classes, so they can be added or removed with JavaScript.
+
+```javascript
+link.classList.add("active");
+otherLink.classList.remove("active");
+```
+
+---
+
+## Concatenation
+
+Joining two strings together using `+`.
+
+```javascript
+chamberName + " has been entered."
+```
+
+---
+
 ## Console
 
 A tool inside the browser's Developer Tools where developers can view messages, errors, and debugging information.
@@ -68,6 +123,16 @@ Example:
 
 ```javascript
 console.log("🌿 The Garden awakens...");
+```
+
+---
+
+## const
+
+A keyword used to declare a variable whose value cannot be reassigned after it is set.
+
+```javascript
+const gardenerName = "The Cheeky Nurgling";
 ```
 
 ---
@@ -96,6 +161,12 @@ Common panels include:
 
 ---
 
+## DOM
+
+Short for **Document Object Model**. The live structure a browser builds in memory from an HTML file, which JavaScript can select and change.
+
+---
+
 ## Element
 
 A complete piece of HTML, usually consisting of an opening tag, content, and a closing tag.
@@ -105,6 +176,12 @@ Example:
 ```html
 <h1>Nurgle's Garden</h1>
 ```
+
+---
+
+## Event
+
+Something that happens on a webpage, such as a click, a key press, or a mouse movement, that JavaScript can listen for and react to.
 
 ---
 
@@ -136,6 +213,30 @@ This path means:
 
 1. Enter the `js` folder.
 2. Find the file named `app.js`.
+
+---
+
+## for...of loop
+
+A loop that visits every item in a list, one at a time, running the same block of code for each one.
+
+```javascript
+for (const link of allLinks) {
+  console.log(link.textContent);
+}
+```
+
+---
+
+## Function
+
+A named, reusable block of instructions that only runs when it is called.
+
+```javascript
+function announceGarden() {
+  console.log("The Garden stirs...");
+}
+```
 
 ---
 
@@ -199,6 +300,17 @@ JavaScript can respond to clicks, update content, store information, and change 
 
 ---
 
+## let
+
+A keyword used to declare a variable whose value can be reassigned later.
+
+```javascript
+let plagueCount = 3;
+plagueCount = 7;
+```
+
+---
+
 ## Live Server
 
 A VS Code extension that runs a local development server and automatically reloads the browser after saved changes.
@@ -216,6 +328,63 @@ The current project runs at an address similar to:
 A lightweight formatting language used for documentation files such as `README.md`.
 
 Markdown supports headings, lists, links, tables, quotes, task lists, and code blocks.
+
+---
+
+## NodeList
+
+A list of elements returned by `querySelectorAll()`, numbered starting at `0`.
+
+```text
+NodeList(6)
+0: a.navigation-link.active
+1: a.navigation-link
+length: 6
+```
+
+---
+
+## Number
+
+A data type for numeric values, written without quotation marks.
+
+```javascript
+const chamberCount = 6;
+```
+
+---
+
+## Parameter
+
+A placeholder listed inside a function's parentheses, filled in with an argument when the function is called.
+
+```javascript
+function announceChamber(chamberName) {
+  console.log(chamberName + " has been entered.");
+}
+```
+
+`chamberName` is the parameter.
+
+---
+
+## querySelector
+
+A method that finds the first element on a page matching a CSS selector.
+
+```javascript
+const sanctuaryLink = document.querySelector(".navigation-link.active");
+```
+
+---
+
+## querySelectorAll
+
+A method that finds every element on a page matching a CSS selector, returned as a `NodeList`.
+
+```javascript
+const allLinks = document.querySelectorAll(".navigation-link");
+```
 
 ---
 
@@ -272,6 +441,38 @@ Semantic HTML improves organization, accessibility, and maintainability.
 The human-readable instructions written by a developer.
 
 HTML, CSS, JavaScript, and Markdown files are all forms of source code in this project.
+
+---
+
+## String
+
+A data type for text, written inside quotation marks.
+
+```javascript
+const forgeName = "The Forge";
+```
+
+---
+
+## typeof
+
+An operator that reports the data type of a value.
+
+```text
+typeof forgeName
+```
+
+Returns `"string"`.
+
+---
+
+## Variable
+
+A named place to store a value.
+
+```javascript
+const gardenerName = "The Cheeky Nurgling";
+```
 
 ---
 

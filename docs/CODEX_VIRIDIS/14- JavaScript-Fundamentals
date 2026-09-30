@@ -1,0 +1,877 @@
+# Chapter XIV — JavaScript Fundamentals
+
+> *"A fortress may stand in silence for years. It takes only a single instruction for it to speak."*
+
+---
+
+## 📚 What You Will Learn
+
+In this chapter, you will learn:
+
+- What a variable is.
+- The difference between `const` and `let`.
+- How to store text, numbers, and true/false values.
+- What a data type is.
+- What a function is.
+- The difference between defining a function and calling one.
+- What a parameter is.
+- What an argument is.
+- How to join text together using `+`.
+
+---
+
+## 🌿 Why This Matters
+
+Nurgle's Garden already had structure before this chapter.
+
+HTML gave it shape. CSS gave it color and atmosphere.
+
+Neither one could store a value, make a decision, or repeat an action.
+
+JavaScript is the language that lets the Garden hold onto information and act on it.
+
+Every feature covered later in this Codex, including the Fortress navigation, depends on the ideas introduced here first.
+
+You do not need to memorize every rule in this chapter.
+
+You only need a clear picture of how a value is stored, and how a function reuses instructions.
+
+---
+
+## 1. What Is a Variable?
+
+A variable is a named place to store a value.
+
+Think of it as a labeled box.
+
+The label is the name you choose.
+
+The contents are the value stored inside.
+
+```javascript
+const gardenerName = "The Cheeky Nurgling";
+```
+
+`gardenerName` is the label.
+
+`"The Cheeky Nurgling"` is the value placed inside it.
+
+---
+
+## 2. Declaring a Variable with `const`
+
+`const` creates a variable whose value cannot be changed after it is set.
+
+```javascript
+const gardenerName = "The Cheeky Nurgling";
+```
+
+Attempting to assign a new value to a `const` variable produces an error.
+
+```javascript
+gardenerName = "Someone Else"; // Error
+```
+
+Once a `const` box is filled, it stays filled.
+
+---
+
+## 3. Changing a Value with `let`
+
+`let` creates a variable whose value can be changed later.
+
+```javascript
+let plagueCount = 3;
+plagueCount = 7;
+```
+
+The second line replaces the value stored in `plagueCount`.
+
+This is allowed with `let` and not allowed with `const`.
+
+---
+
+## 4. Why `const` Is Used by Default
+
+Most JavaScript style guides recommend using `const` unless a value genuinely needs to change.
+
+This habit prevents a value from being overwritten by accident somewhere else in the code.
+
+`let` is still correct to use, but only when reassignment is expected.
+
+---
+
+## 5. Data Types
+
+A data type describes what kind of value a variable holds.
+
+This chapter introduces three data types:
+
+- String
+- Number
+- Boolean
+
+The correct type matters. JavaScript treats each one differently.
+
+---
+
+## 6. Strings
+
+A string is text.
+
+A string is written inside quotation marks.
+
+```javascript
+const forgeName = "The Forge";
+```
+
+Either double quotes or single quotes may be used. This project uses double quotes.
+
+---
+
+## 7. Numbers
+
+A number is written without quotation marks.
+
+```javascript
+const chamberCount = 6;
+```
+
+`6` without quotes is a number.
+
+`"6"` with quotes is a string that looks like a number, and behaves differently.
+
+---
+
+## 8. Booleans
+
+A boolean can only ever be `true` or `false`.
+
+```javascript
+const isSanctuaryActive = true;
+```
+
+Booleans are used to answer yes-or-no, on-or-off questions.
+
+---
+
+## 9. Checking a Type with `typeof`
+
+`typeof` reports the data type of a value.
+
+Typed directly into the browser Console:
+
+```text
+typeof forgeName
+```
+
+Returns:
+
+```text
+"string"
+```
+
+`typeof chamberCount` returns `"number"`.
+
+`typeof isSanctuaryActive` returns `"boolean"`.
+
+---
+
+## 10. What Is a Function?
+
+A function is a named block of instructions that can be run whenever it is needed.
+
+Writing a function does not run it.
+
+A function must be called to execute its instructions.
+
+---
+
+## 11. Defining a Function
+
+```javascript
+function announceGarden() {
+  console.log("The Garden stirs...");
+}
+```
+
+`function` begins the definition.
+
+`announceGarden` is the function's name.
+
+`()` holds any parameters, currently empty.
+
+`{ }` contains the instructions the function runs.
+
+---
+
+## 12. Calling a Function
+
+```javascript
+announceGarden();
+```
+
+This line runs the instructions written inside the function.
+
+A function can be called as many times as needed, using this same line each time.
+
+---
+
+## 13. Parameters and Arguments
+
+A parameter is a placeholder listed inside a function's parentheses.
+
+An argument is the actual value supplied when the function is called.
+
+```javascript
+function announceChamber(chamberName) {
+  console.log(chamberName + " has been entered.");
+}
+
+announceChamber("The Forge");
+announceChamber("The Archives");
+```
+
+`chamberName` is the parameter.
+
+`"The Forge"` and `"The Archives"` are arguments.
+
+The same function runs both times, using a different value each time.
+
+---
+
+## 14. Joining Text with `+`
+
+The `+` symbol joins two strings together.
+
+```javascript
+chamberName + " has been entered."
+```
+
+If `chamberName` holds `"The Forge"`, the result is:
+
+```text
+The Forge has been entered.
+```
+
+This is called string concatenation.
+
+---
+
+## 15. A Simple Model of This Chapter
+
+```text
+A variable stores a value
+          ↓
+A data type describes that value
+          ↓
+A function holds reusable instructions
+          ↓
+A parameter accepts an argument
+          ↓
+The function runs, using the value supplied
+```
+
+This model is the foundation for the DOM and event handling covered in Chapter XV.
+
+---
+
+## 🏰 Example From Nurgle's Garden
+
+```javascript
+const forgeName = "The Forge";
+const chamberCount = 6;
+const isSanctuaryActive = true;
+
+function announceChamber(chamberName) {
+  console.log(chamberName + " has been entered.");
+}
+
+announceChamber(forgeName);
+announceChamber("The Archives");
+announceChamber("The Sanctuary");
+```
+
+The Console displayed:
+
+```text
+The Forge has been entered.
+The Archives has been entered.
+The Sanctuary has been entered.
+```
+
+One function. Three chambers. No instruction repeated by hand.
+
+---
+
+## ⚠️ Common Mistakes
+
+### Mistake 1: Reassigning a `const`
+
+```javascript
+const gardenerName = "The Cheeky Nurgling";
+gardenerName = "Someone Else"; // Error
+```
+
+Use `let` instead, if the value is meant to change.
+
+---
+
+### Mistake 2: Forgetting quotation marks around a string
+
+```javascript
+const chamberName = The Forge; // Error
+```
+
+Correct:
+
+```javascript
+const chamberName = "The Forge";
+```
+
+---
+
+### Mistake 3: Putting quotation marks around a number
+
+```javascript
+const chamberCount = "6";
+```
+
+This stores a string, not a number, even though it looks like one.
+
+---
+
+### Mistake 4: Defining a function but never calling it
+
+```javascript
+function announceGarden() {
+  console.log("The Garden stirs...");
+}
+```
+
+Nothing happens until the function is called:
+
+```javascript
+announceGarden();
+```
+
+---
+
+### Mistake 5: Forgetting the parentheses when calling a function
+
+```javascript
+announceGarden; // Does nothing
+```
+
+Correct:
+
+```javascript
+announceGarden();
+```
+
+---
+
+## ✅ Best Practices
+
+- Use `const` by default.
+- Use `let` only when a value must change.
+- Keep strings inside quotation marks.
+- Keep numbers free of quotation marks.
+- Give functions clear, descriptive names.
+- Test a function immediately after writing it.
+- Use `typeof` when unsure what a value's type is.
+
+---
+
+## 🧠 Learning Check
+
+Can you answer these questions?
+
+- What is the difference between `const` and `let`?
+- What happens if you try to reassign a `const` variable?
+- How can you tell a string apart from a number written in code?
+- What does a boolean store?
+- What is the difference between defining a function and calling one?
+- What is a parameter?
+- What is an argument?
+- What does `+` do when placed between two strings?
+
+---
+
+## 📝 Practice Challenge
+
+Without looking at the earlier sections, write a function named `announceCommit` that accepts one parameter and logs a sentence using it.
+
+Call the function three times, using a different argument each time.
+
+Then explain, in your own words, the difference between the function's definition and each time it is called.
+
+---
+
+## 🌱 Nurgling Notes
+
+I learned that:
+
+- A variable is a named box that holds a value.
+- `const` locks a value in place. `let` allows it to change.
+- Strings hold text and are wrapped in quotation marks.
+- Numbers are written without quotation marks.
+- Booleans can only be `true` or `false`.
+- `typeof` reveals what type a value actually is.
+- A function is only a plan until it is called.
+- A parameter is a placeholder. An argument is the real value supplied.
+- `+` joins two strings into one.
+
+---
+
+## Quick Review
+
+```text
+Variable
+A named box that stores a value.
+
+const
+Creates a variable that cannot be reassigned.
+
+let
+Creates a variable that can be reassigned.
+
+String
+Text, wrapped in quotation marks.
+
+Number
+A numeric value, written without quotation marks.
+
+Boolean
+A value that is either true or false.
+
+typeof
+Reports the data type of a value.
+
+Function
+A named, reusable block of instructions.
+
+Parameter
+A placeholder listed in a function's definition.
+
+Argument
+The actual value supplied when a function is called.
+
+Concatenation
+Joining two strings together using +.
+```
+
+---
+
+## Chronicle Reference
+
+This chapter is the first half of the knowledge behind the lore entry:
+
+**The Garden Learns to Listen**
+
+# Chapter XV — The DOM and Events
+
+> *"The Garden had learned to speak. It had not yet learned to listen."*
+
+---
+
+## 📚 What You Will Learn
+
+In this chapter, you will learn:
+
+- What the DOM is.
+- How to select one element with `querySelector()`.
+- How to select every matching element with `querySelectorAll()`.
+- What a `NodeList` is.
+- How to repeat an action with a `for...of` loop.
+- What an event is.
+- How to listen for a click with `addEventListener()`.
+- How to add and remove a CSS class with `classList`.
+- How these pieces combine into the Fortress navigation feature.
+
+---
+
+## 🌿 Why This Matters
+
+Chapter XIV covered variables, data types, and functions.
+
+Every example in that chapter ran the moment the page loaded, and stopped there.
+
+None of it touched the actual page a visitor sees.
+
+This chapter closes that gap.
+
+The DOM is how JavaScript reaches into the real HTML sitting on the page.
+
+Events are how JavaScript waits for a visitor to do something, instead of only running once.
+
+Together, they are what allowed Nurgle's Garden to react to a click for the first time.
+
+---
+
+## 1. What Is the DOM?
+
+The DOM stands for **Document Object Model**.
+
+When a browser reads `index.html`, it builds a live structure in memory from that file.
+
+That structure is the DOM.
+
+The HTML file describes the page.
+
+The DOM is the actual page, built from that description, and JavaScript can reach into it directly.
+
+---
+
+## 2. Selecting One Element with `querySelector()`
+
+`document.querySelector()` finds the first element matching a CSS selector.
+
+```javascript
+const sanctuaryLink = document.querySelector(".navigation-link.active");
+```
+
+`.navigation-link.active` asks for an element carrying both classes at once.
+
+The result, stored in `sanctuaryLink`, is a live reference to that real element, not a copy or a description of it.
+
+---
+
+## 3. Selecting Every Matching Element with `querySelectorAll()`
+
+`document.querySelectorAll()` finds every element matching a CSS selector.
+
+```javascript
+const allLinks = document.querySelectorAll(".navigation-link");
+```
+
+This returns all six chamber links at once, not just the first.
+
+---
+
+## 4. What a `NodeList` Is
+
+`querySelectorAll()` returns a `NodeList`.
+
+A `NodeList` is a list of elements, numbered starting at `0`.
+
+```text
+NodeList(6)
+0: a.navigation-link.active
+1: a.navigation-link
+2: a.navigation-link
+3: a.navigation-link
+4: a.navigation-link
+5: a.navigation-link
+length: 6
+```
+
+Six chambers occupy positions `0` through `5`, not `1` through `6`.
+
+---
+
+## 5. Counting from Zero
+
+JavaScript, like most programming languages, counts list positions starting at `0`.
+
+The first item sits at position `0`.
+
+The second item sits at position `1`.
+
+This is a fixed rule of the language, not a display choice.
+
+---
+
+## 6. Repeating an Action with `for...of`
+
+A `for...of` loop visits every item in a list, one at a time.
+
+```javascript
+for (const link of allLinks) {
+  console.log(link.textContent);
+}
+```
+
+On each pass, JavaScript places the current item into `link`, runs the code inside the braces, then moves to the next item.
+
+The loop stops automatically once every item has been visited.
+
+---
+
+## 7. Reading Text from an Element
+
+`.textContent` reads the visible text inside an element.
+
+```javascript
+console.log(link.textContent);
+```
+
+For the Forge link, this returns the icon and label together, exactly as written inside the tag.
+
+---
+
+## 8. What Is an Event?
+
+An event is something that happens on the page, such as a click, a key press, or a mouse movement.
+
+JavaScript can wait for an event and react only when it occurs.
+
+---
+
+## 9. Listening for a Click with `addEventListener()`
+
+```javascript
+sanctuaryLink.addEventListener("click", function () {
+  console.log("You clicked the Sanctuary link!");
+});
+```
+
+`.addEventListener()` attaches a listener to an element.
+
+`"click"` names the event being watched for.
+
+The function inside the parentheses has no name of its own. It is called an anonymous function, and the browser runs it automatically whenever the event occurs.
+
+This code produces no output when the page loads. It only runs after the click happens.
+
+---
+
+## 10. Adding a Listener to Every Chamber
+
+A loop can attach the same listener to every element in a list.
+
+```javascript
+for (const link of allLinks) {
+  link.addEventListener("click", function () {
+    console.log(link.textContent + " was clicked.");
+  });
+}
+```
+
+All six chambers now listen for a click, using one block of code instead of six.
+
+---
+
+## 11. Reading and Changing Classes with `classList`
+
+`.classList` provides access to an element's CSS classes.
+
+```javascript
+otherLink.classList.remove("active");
+link.classList.add("active");
+```
+
+`.remove("active")` takes the `active` class off an element.
+
+`.add("active")` places the `active` class onto an element.
+
+Removing or adding a class changes how `garden.css` styles that element immediately.
+
+---
+
+## 12. Assembling the Navigation Feature
+
+```javascript
+for (const link of allLinks) {
+  link.addEventListener("click", function () {
+    for (const otherLink of allLinks) {
+      otherLink.classList.remove("active");
+    }
+    link.classList.add("active");
+  });
+}
+```
+
+The outer loop attaches a click listener to all six chambers.
+
+Inside each listener, an inner loop removes `active` from every chamber, without exception.
+
+Once every chamber has been cleared, `active` is added back onto only the one that was clicked.
+
+Clearing every chamber first, then setting the one exception, is simpler and more reliable than trying to track which single chamber was previously active.
+
+---
+
+## 13. A Simple Model of This Chapter
+
+```text
+querySelectorAll finds every chamber
+          ↓
+for...of visits each chamber in turn
+          ↓
+addEventListener waits for a click on each one
+          ↓
+On click, every chamber loses the active class
+          ↓
+The clicked chamber receives the active class back
+```
+
+---
+
+## 🏰 Example From Nurgle's Garden
+
+```javascript
+const allLinks = document.querySelectorAll(".navigation-link");
+
+for (const link of allLinks) {
+  link.addEventListener("click", function () {
+    for (const otherLink of allLinks) {
+      otherLink.classList.remove("active");
+    }
+    link.classList.add("active");
+  });
+}
+```
+
+Clicking the Forge moved the active styling away from the Sanctuary and onto the Forge.
+
+Clicking the Archives moved it again.
+
+No chamber ever held the active styling twice at once.
+
+---
+
+## ⚠️ Common Mistakes
+
+### Mistake 1: Expecting `querySelector()` to return more than one element
+
+```javascript
+const link = document.querySelector(".navigation-link");
+```
+
+This returns only the first match.
+
+Use `querySelectorAll()` to reach every match.
+
+---
+
+### Mistake 2: Forgetting that lists start at `0`
+
+```text
+allLinks[1]
+```
+
+This refers to the second chamber, not the first.
+
+---
+
+### Mistake 3: Expecting a listener to run immediately
+
+```javascript
+sanctuaryLink.addEventListener("click", function () {
+  console.log("Clicked");
+});
+```
+
+This produces no output until an actual click occurs.
+
+---
+
+### Mistake 4: Clearing the active class after adding it
+
+```javascript
+link.classList.add("active");
+for (const otherLink of allLinks) {
+  otherLink.classList.remove("active");
+}
+```
+
+This order removes `active` from the very chamber that just received it.
+
+Clear every chamber first. Add the class back afterward.
+
+---
+
+### Mistake 5: Confusing `console.log()` with a change to the page
+
+`console.log()` writes only to the Console.
+
+Only DOM methods such as `classList` change what a visitor actually sees.
+
+---
+
+## ✅ Best Practices
+
+- Use `querySelectorAll()` when more than one element needs to be reached.
+- Remember that list positions begin at `0`.
+- Attach listeners inside a loop when the same behavior applies to every item in a list.
+- Clear a shared state before setting the one exception.
+- Confirm a DOM change on the actual page, not only in the Console.
+
+---
+
+## 🧠 Learning Check
+
+Can you answer these questions?
+
+- What is the DOM?
+- What is the difference between `querySelector()` and `querySelectorAll()`?
+- What position does the first item in a `NodeList` occupy?
+- What does a `for...of` loop do?
+- What is an event?
+- What does `addEventListener()` require to be told?
+- What does `classList.remove()` do?
+- What does `classList.add()` do?
+- Why is every chamber cleared before the clicked one is set?
+
+---
+
+## 📝 Practice Challenge
+
+Without looking at the earlier sections, write a `for...of` loop that visits `allLinks` and logs the position number of each chamber alongside its text.
+
+Then explain, in your own words, why the navigation feature clears every chamber's `active` class before adding it back to just one.
+
+---
+
+## 🌱 Nurgling Notes
+
+I learned that:
+
+- The DOM is the live version of the page, built from the HTML file.
+- `querySelector()` returns one element. `querySelectorAll()` returns every match.
+- A `NodeList` counts its items starting at `0`.
+- A `for...of` loop visits every item in a list automatically.
+- An event listener waits for something to happen before running.
+- `classList.remove()` and `classList.add()` change what a visitor actually sees.
+- Clearing everything first, then setting one exception, is a pattern worth remembering.
+
+---
+
+## Quick Review
+
+```text
+DOM
+The live structure the browser builds from an HTML file.
+
+querySelector
+Finds the first element matching a CSS selector.
+
+querySelectorAll
+Finds every element matching a CSS selector.
+
+NodeList
+A list of elements, numbered starting at 0.
+
+for...of
+A loop that visits every item in a list.
+
+Event
+Something that happens on the page, such as a click.
+
+addEventListener
+Attaches a function that runs when a specific event occurs.
+
+classList
+Provides access to add or remove an element's CSS classes.
+```
+
+---
+
+## Chronicle Reference
+
+This chapter is the second half of the knowledge behind the lore entry:
+
+**The Garden Learns to Listen**
+
+Chapter XIV covered the fundamentals. This chapter completed the feature, giving the Fortress navigation its working response to a visitor's touch.
